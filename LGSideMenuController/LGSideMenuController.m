@@ -392,7 +392,7 @@ rightViewBackgroundImageFinalScale = _rightViewBackgroundImageFinalScale;
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
 
-    CGSize size = self.view.bounds.size;
+    CGSize size = [UIScreen mainScreen].bounds.size;
 
     if (self.isNeedsUpdateLayoutsAndStyles || !CGSizeEqualToSize(self.savedSize, size)) {
         BOOL appeared = !CGSizeEqualToSize(self.savedSize, CGSizeZero);

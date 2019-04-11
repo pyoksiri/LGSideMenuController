@@ -26,12 +26,15 @@ class OtherViewController: UITableViewController {
     // MARK: -
 
     func showChooseController() {
-        let navigationController = ChooseNavigationController()
+        self.dismiss(animated: true) {
+            
+        }
+        /*let navigationController = ChooseNavigationController()
 
         let window = UIApplication.shared.delegate!.window!!
         window.rootViewController = navigationController
 
-        UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)*/
     }
 
     // MARK: - UITableViewDataSource
